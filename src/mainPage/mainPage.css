@@ -1,0 +1,40 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+    gap: 10px;
+    transform: translate(0,450%);
+}
+.playBtn{
+    padding: 8px 20px;
+    outline: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    transition: 0.5s;
+}
+.playBtn:hover{
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+        rgba(255, 255, 255, 0.12) 0px -12px 30px,
+        rgba(255, 255, 255, 0.12) 0px 4px 6px,
+        rgba(255, 255, 255, 0.17) 0px 12px 13px,
+            rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+}
+
+@media(max-width:425px){
+        .hero{
+        transform: translate(0,250%);
+
+        }
+        .textfront{
+            
+            text-align: center;
+        }
+}

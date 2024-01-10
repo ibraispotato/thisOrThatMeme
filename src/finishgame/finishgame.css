@@ -1,0 +1,31 @@
+.collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.imgdone{
+    width: 25%;
+}
+.inside{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.betn{
+    margin-bottom: 20px;
+}
+.playBtn:focus{
+    border: 1px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+@media(max-width:768px){
+    .textcolletion{
+        text-align: center;
+    }
+    .imgdone{
+        width: 40%;
+    }
+}
