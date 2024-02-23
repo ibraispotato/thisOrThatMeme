@@ -12,10 +12,10 @@
             const [text, setText] = useState([])
             const { setAddOne, addOne,numberChoosen } = useStateContext()
             const [urls, setUrls] = useState("")
-            const [time,setTime] = useState()
+            const [time,setTime] = useState(false)
             // console.log(time)
             useEffect(() => {
-                setTime(urls === "" ? "" : true)
+                setTime(urls === "" ?false : true)
                 
             },[time,urls])
             console.log(addOne)
@@ -98,8 +98,8 @@
                                 {<button className='playBtn' onClick={urls === "" ? genMeme : console.log("lol")}>Generate 🤩</button>}
                     
                     
-                    <Link to={`${addOne.length===parseInt(numberChoosen)?"/thEnd<3":(time?"/beforeYouPlay/gameStarted":"")}`}>
-                        <button className='playBtn continue' onClick={time ?add:console.log("lol")}>continue 🥳</button>
+                    <Link to={`${addOne.length===parseInt(numberChoosen)&&urls!==""?"/thEnd<3":(time?"/beforeYouPlay/gameStarted":"")}`}>
+                        <button className='playBtn continue' onClick={urls!==""?time ?add:console.log("lol"):console.log("lol")}>continue 🥳</button>
                     </Link>
                     <Link to={'/beforeYouPlay/gameStarted'}>
                         <button className='playBtn back'>Back 🤨</button>

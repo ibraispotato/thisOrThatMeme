@@ -2,8 +2,10 @@
 import "./BeforeYouPlay.css"
 import { Link } from 'react-router-dom'
 import Numbers from "../numbers/numbers"
+import { useStateContext } from "../context/contexts"
     
 const BeforeYouPlay = () => {
+  const { setNumberChoosen, numberChoosen,addOne } = useStateContext()
         
     return (
         <div className='containerBeforeYouPlay'>
@@ -15,7 +17,7 @@ const BeforeYouPlay = () => {
             </div>
             <div className='num'>
                 <Numbers/>
-            <Link to={"gameStarted"}>
+            <Link to={`${typeof(numberChoosen)==="string"?"gameStarted":"/beforeYouPlay"}`}>
             <button className='playBtn'>Let's play 🤗</button>
             </Link>
             </div>

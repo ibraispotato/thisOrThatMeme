@@ -7,7 +7,7 @@ export const Context = createContext()
 export const GetContext = ({ children }) => {
     const [addOne, setAddOne] = useState([])
     const [numberChoosen, setNumberChoosen] = useState()
-    // console.log(addOne)
+    console.log(addOne.length===parseInt(numberChoosen))
     return (
         <Context.Provider value={{
             addOne,
