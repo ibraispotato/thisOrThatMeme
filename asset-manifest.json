@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/thisOrThatMeme/static/css/main.074f9a16.css",
-    "main.js": "/thisOrThatMeme/static/js/main.6a20b7b0.js",
+    "main.css": "/thisOrThatMeme/static/css/main.0f50245b.css",
+    "main.js": "/thisOrThatMeme/static/js/main.cc16e14c.js",
     "index.html": "/thisOrThatMeme/index.html",
-    "main.074f9a16.css.map": "/thisOrThatMeme/static/css/main.074f9a16.css.map",
-    "main.6a20b7b0.js.map": "/thisOrThatMeme/static/js/main.6a20b7b0.js.map"
+    "main.0f50245b.css.map": "/thisOrThatMeme/static/css/main.0f50245b.css.map",
+    "main.cc16e14c.js.map": "/thisOrThatMeme/static/js/main.cc16e14c.js.map"
   },
   "entrypoints": [
-    "static/css/main.074f9a16.css",
-    "static/js/main.6a20b7b0.js"
+    "static/css/main.0f50245b.css",
+    "static/js/main.cc16e14c.js"
   ]
 }
